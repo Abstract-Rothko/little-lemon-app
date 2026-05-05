@@ -2,9 +2,7 @@ function Nav() {
     return (
         <nav>
             <div className="navbar-left">
-                <a href="#">
-                    <img src="./little-lemon-app/public/Logo.svg" alt="Little Lemon Logo"></img>
-                </a>
+                <img src="" alt="Little Lemon Logo"></img>
             </div>
             <div className="navbar-right">
                 <ul>
