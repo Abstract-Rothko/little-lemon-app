@@ -1,4 +1,5 @@
-
+import chefDuo1 from "../assets/chefs1.jpg";
+import chefDuo2 from "../assets/chefs2.jpg"
 
 const About = () => {
     return (

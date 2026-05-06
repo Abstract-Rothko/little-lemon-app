@@ -1,10 +1,15 @@
+import Image1 from "../assets/Person1.jpg"
+import Image2 from "../assets/Person2.jpg"
+import Image3 from "../assets/Person3.jpg"
+import Image4 from "../assets/Person4.jpg"
+
 const starPng = "https://www.flaticon.com/free-icons/star"
 
 const Testimonials = () => {
     return (
         <section className="testimonials">
         <section className="testimonials-wrap">
-          <p className="heading">What people say about us !</p>
+          <p className="heading">What people say about us!</p>
           <div className="flex-items">
             
             <div className="flex-item">
@@ -70,11 +75,11 @@ const Testimonials = () => {
               </div>
               <p className="name">Tommy</p>
               <span className="stars">
-                <Star />
-                <Star />
-                <Star />
-                <Star />
-                <Star />
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
               </span>
               <div className="text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.

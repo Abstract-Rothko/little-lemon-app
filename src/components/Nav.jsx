@@ -1,10 +1,11 @@
+import icon from "../assets/logo.svg"
 import "./Nav.css";
 
 function Nav() {
     return (
         <nav className="navbar">
             <div className="navbar-left">
-                <img src="" alt="Little Lemon Logo"></img>
+                <img src={icon} alt="Little Lemon Logo"></img>
             </div>
             <div className="navbar-right">
                 <ul>
