@@ -1,4 +1,4 @@
-
+const starPng = "https://www.flaticon.com/free-icons/star"
 
 const Testimonials = () => {
     return (
@@ -13,11 +13,11 @@ const Testimonials = () => {
               </div>
               <p className="name">Gabriella</p>
               <span className="stars">
-                <Star />
-                <Star />
-                <Star />
-                <Star />
-                <Star />
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
               </span>
               <div className="text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -32,11 +32,11 @@ const Testimonials = () => {
               </div>
               <p className="name">Nicholas</p>
               <span className="stars">
-                <Star />
-                <Star />
-                <Star />
-                <Star />
-                <Star />
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
               </span>
               <div className="text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -51,11 +51,11 @@ const Testimonials = () => {
               </div>
               <p className="name">Amelia</p>
               <span className="stars">
-                <Star />
-                <Star />
-                <Star />
-                <Star />
-                <Star />
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
+                <img src={starPng} alt="star icon"/>
               </span>
               <div className="text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
