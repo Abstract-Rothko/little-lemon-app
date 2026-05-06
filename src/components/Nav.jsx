@@ -1,6 +1,8 @@
+import "./Nav.css";
+
 function Nav() {
     return (
-        <nav>
+        <nav className="navbar">
             <div className="navbar-left">
                 <img src="" alt="Little Lemon Logo"></img>
             </div>
