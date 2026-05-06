@@ -14,7 +14,7 @@ const Testimonials = () => {
             
             <div className="flex-item">
               <div className="img-wrap">
-                <img src={Image1} alt="Customer" />
+                <img src={Image1} alt="Customer" width="300" height="200"/>
               </div>
               <p className="name">Gabriella</p>
               <span className="stars">
@@ -33,7 +33,7 @@ const Testimonials = () => {
 
             <div className="flex-item">
               <div className="img-wrap">
-                <img src={Image2} alt="Customer" />
+                <img src={Image2} alt="Customer" width="300" height="200" />
               </div>
               <p className="name">Nicholas</p>
               <span className="stars">
@@ -52,7 +52,7 @@ const Testimonials = () => {
 
             <div className="flex-item">
               <div className="img-wrap">
-                <img src={Image3} alt="Customer" />
+                <img src={Image3} alt="Customer" width="300" height="200" />
               </div>
               <p className="name">Amelia</p>
               <span className="stars">
@@ -71,7 +71,7 @@ const Testimonials = () => {
 
             <div className="flex-item">
               <div className="img-wrap">
-                <img src={Image4} alt="Customer" />
+                <img src={Image4} alt="Customer" width="300" height="200" />
               </div>
               <p className="name">Tommy</p>
               <span className="stars">

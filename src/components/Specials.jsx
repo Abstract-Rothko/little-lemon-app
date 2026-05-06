@@ -13,7 +13,7 @@ const Specials = () => {
                 <section className="card-flex">
                     <article className="card-container">
                         <section className="">
-                            <img src={salad} alt="A greek salad" />
+                            <img src={salad} alt="A greek salad" width="400" height="250"/>
                         </section>
                         <h4>Greek Salad</h4>
                         <p>$12.00</p>
@@ -26,7 +26,7 @@ const Specials = () => {
                     </article>
                     <article className="card-container">
                         <section>
-                            <img src={bruschetta} alt="A bruschetta dish" />
+                            <img src={bruschetta} alt="A bruschetta dish" width="400" height="250" />
                         </section>
                         <h4>Bruschetta</h4>
                         <p>$15.00</p>
@@ -39,7 +39,7 @@ const Specials = () => {
                     </article>
                     <article className="card-container">
                         <section>
-                            <img src={desert} alt="A lemon desert" />
+                            <img src={desert} alt="A lemon desert" width="400" height="250"/>
                         </section>
                         <h4>Lemon Desert</h4>
                         <p>$25.00</p>
