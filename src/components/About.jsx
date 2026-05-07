@@ -1,5 +1,6 @@
 import chefDuo1 from "../assets/chefs1.jpg";
 import chefDuo2 from "../assets/chefs2.jpg"
+import "./About.css"
 
 const About = () => {
     return (
@@ -16,8 +17,7 @@ const About = () => {
                 </p>
             </section>
             <section className="images">
-                <img src="" alt="" />
-                <img src="" alt="" />
+                <img className="duo-img" src={chefDuo1} alt="Adrian and Mario photo" />
             </section>
         </section>
     )

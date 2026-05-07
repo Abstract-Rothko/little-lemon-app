@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #333;
-  color: #fff;
+  color: #edefee;
   padding: 1rem;
 }
 
@@ -14,7 +14,7 @@
   text-decoration: none;
 }
 
-.navbar-right {
+.navbar-right ul {
   list-style-type: none;
   display: flex;
   margin: 0;
@@ -26,6 +26,12 @@
 }
 
 .navbar-right a {
-  color: #fff;
+  color: #edefee;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-right a:hover {
+  color: #f4ce14;
+  text-decoration: underline;
 }

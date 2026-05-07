@@ -1,0 +1,12 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #817b7b;
+  color: #050404;
+  padding: 1rem;
+}
+
+.text-section {
+    padding: 2rem
+}

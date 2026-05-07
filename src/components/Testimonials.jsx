@@ -2,8 +2,9 @@ import Image1 from "../assets/Person1.jpg"
 import Image2 from "../assets/Person2.jpg"
 import Image3 from "../assets/Person3.jpg"
 import Image4 from "../assets/Person4.jpg"
+import "./Testimonials.css"
 
-const starPng = "https://www.flaticon.com/free-icons/star"
+const starPng = "https://www.flaticon.com/free-icons/star";
 
 const Testimonials = () => {
     return (
@@ -11,10 +12,9 @@ const Testimonials = () => {
         <section className="testimonials-wrap">
           <p className="heading">What people say about us!</p>
           <div className="flex-items">
-            
             <div className="flex-item">
               <div className="img-wrap">
-                <img src={Image1} alt="Customer" width="300" height="200"/>
+                <img class="profile-img" src={Image1} alt="Customer" width="300" height="200"/>
               </div>
               <p className="name">Gabriella</p>
               <span className="stars">
@@ -33,7 +33,7 @@ const Testimonials = () => {
 
             <div className="flex-item">
               <div className="img-wrap">
-                <img src={Image2} alt="Customer" width="300" height="200" />
+                <img class="profile-img" src={Image2} alt="Customer" width="300" height="200" />
               </div>
               <p className="name">Nicholas</p>
               <span className="stars">
@@ -52,7 +52,7 @@ const Testimonials = () => {
 
             <div className="flex-item">
               <div className="img-wrap">
-                <img src={Image3} alt="Customer" width="300" height="200" />
+                <img class="profile-img" src={Image3} alt="Customer" width="300" height="200" />
               </div>
               <p className="name">Amelia</p>
               <span className="stars">
@@ -71,7 +71,7 @@ const Testimonials = () => {
 
             <div className="flex-item">
               <div className="img-wrap">
-                <img src={Image4} alt="Customer" width="300" height="200" />
+                <img class="profile-img" src={Image4} alt="Customer" width="300" height="200" />
               </div>
               <p className="name">Tommy</p>
               <span className="stars">

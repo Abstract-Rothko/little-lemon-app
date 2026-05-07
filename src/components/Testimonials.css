@@ -1,0 +1,18 @@
+.flex-items, .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #928383;
+  color: #1d1b1b;
+  padding: 1rem;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+.flex-item {
+    margin: 2.5rem 1rem;
+    width: auto;
+}
