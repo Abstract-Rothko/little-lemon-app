@@ -1,4 +1,4 @@
-.card-flex, .specials-header {
+.specials-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,37 +7,30 @@
   padding: 1rem;
 }
 
-img {
-  border-radius: 5px 5px 0 0;
-  width: 100%;
+
+.card-flex {
+  display: flex;
+  gap: 25px;
+  margin: 2rem 1rem;
 }
 
 .card-container {
-    margin: 1rem;
-    width: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-/* .text-section {
-    padding: 2rem
-} */
-
-/*
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  border-radius: 5px;
+.image-card img {
+  height: 250px;
+  width: 100%;
+  display: block;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.card-container {
+  width: 100%;
+  height: 500px;
+  text-wrap: unset;
 }
-
-img {
-  border-radius: 5px 5px 0 0;
-}
-
-.container {
-  padding: 2px 16px;
-}
-*/
