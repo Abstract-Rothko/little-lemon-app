@@ -11,7 +11,7 @@ const Hero = () => {
                     We are a family owned Mediterranean restaurant, focused on traditional recipes served
                     with a modern twist.
                 </p>
-                <button>Reserve a Table</button>
+                <button className="reserve-btn">Reserve a Table</button>
             </section>
             <section className="image-section">
                 <img src={heroImage} alt="An image of the restaurant" width="600" height="450"/>
