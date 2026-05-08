@@ -1,3 +1,10 @@
+@import url('https://googleapis.com');
+
+
+h1, h2, h3 {
+  font-family: 'Markazi Text', serif;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -14,24 +21,73 @@
   text-decoration: none;
 }
 
+.navbar-right {
+  font-family: 'Karla', sans-serif;
+}
+
 .navbar-right ul {
-  list-style-type: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.navbar-right li {
-  margin-right: 1rem;
+.navbar-right ul {
+  list-style-type: none;
 }
 
-.navbar-right a {
+.navbar-right li {
+  margin-right: 1rem;
+  text-align: center;
   color: #edefee;
   text-decoration: none;
   font-weight: bold;
+  padding: 6px 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  position: relative;
 }
 
-.navbar-right a:hover {
+.navbar-right li a {
+  color: #edefee;
+  text-decoration: none;
+}
+
+.login-btn a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* CSS */
+.login-btn {
+  appearance: none;
+  background-color: #f4ce14;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login-btn a:hover, .login-btn:hover {
+  background-color: #495e57;
+  color: #edefee;
+}
+
+.login-btn:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.navbar-right li a:hover {
   color: #f4ce14;
   text-decoration: underline;
 }

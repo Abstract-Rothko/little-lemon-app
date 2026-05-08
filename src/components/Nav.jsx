@@ -10,23 +10,23 @@ function Nav() {
             <div className="navbar-right">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="/">About</a>
                     </li>
                     <li>
-                        <a href="#">Menu</a>
+                        <a href="/">Menu</a>
                     </li>
                     <li>
-                        <a href="#">Reservations</a>
+                        <a href="/">Reservations</a>
                     </li>
                     <li>
-                        <a href="#">Order Online</a>
+                        <a href="/">Order Online</a>
                     </li>
-                    <li>
-                        <a href="#">Login</a>
-                    </li>
+                <button className="login-btn">
+                    <a href="/">Login</a>
+                </button>
                 </ul>
             </div>
         </nav>
