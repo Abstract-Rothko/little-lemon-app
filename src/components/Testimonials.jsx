@@ -2,7 +2,7 @@ import Image1 from "../assets/Person1.jpg"
 import Image2 from "../assets/Person2.jpg"
 import Image3 from "../assets/Person3.jpg"
 import Image4 from "../assets/Person4.jpg"
-import starPng from "../assets/star.svg"
+import starPng from "../assets/black-star.png"
 import "./Testimonials.css"
 
 
@@ -74,8 +74,8 @@ const Testimonials = () => {
               <section className="img-wrap">
                 <img class="profile-img" src={Image4} alt="Customer" width="300" height="200" />
               </section>
-              <h4 className="name">Westside Gunn</h4>
               <section className="content">
+                <h4 className="name">Westside Gunn</h4>
                 <span className="stars">
                   <img className="star" src={starPng} alt="star icon"/>
                   <img className="star" src={starPng} alt="star icon"/>
