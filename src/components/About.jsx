@@ -6,8 +6,8 @@ const About = () => {
     return (
         <section className="container">
             <section className="text">
-                <h2>Little Lemon</h2>
-                <h3>Chicago</h3>
+                <h2>About Us</h2>
+                <h3>Little Lemon Family</h3>
                 <p>
                     Little lemon opened in 1995 by two italian brothers, Adrian and Mario.
                     Despite the city's diversity, the two brothers recognized the lack of Mediterranean cuisine in Chicago,
