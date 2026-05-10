@@ -9,15 +9,16 @@ import "./Testimonials.css"
 const Testimonials = () => {
     return (
         <section className="testimonials">
-        <section className="testimonials-wrap">
-          <p className="heading">What people say about us!</p>
-          <div className="flex-items">
+          <section className="testimonials-wrap">
+            <h2 className="heading">What people say about us!</h2>
+          </section>
+          <section className="flex-items">
             <article className="flex-item">
               <section className="img-wrap">
                 <img class="profile-img" src={Image1} alt="Customer" width="300" height="200"/>
               </section>
               <section className="content">
-                <p className="name">Drake</p>
+                <h4 className="name">Drake</h4>
                 <span className="stars">
                   <img src={starPng} alt="star icon"/>
                   <img src={starPng} alt="star icon"/>
@@ -36,7 +37,7 @@ const Testimonials = () => {
                 <img class="profile-img" src={Image2} alt="Customer" width="300" height="200" />
               </section>
               <section className="content">
-                <p className="name">Kendrick Lamar</p>
+                <h4 className="name">Kendrick Lamar</h4>
                 <span className="stars">
                   <img src={starPng} alt="star icon"/>
                   <img src={starPng} alt="star icon"/>
@@ -55,7 +56,7 @@ const Testimonials = () => {
                 <img class="profile-img" src={Image3} alt="Customer" width="300" height="200" />
               </section>
               <section className="content">
-                <p className="name">J. Cole</p>
+                <h4 className="name">J. Cole</h4>
                 <span className="stars">
                   <img src={starPng} alt="star icon"/>
                   <img src={starPng} alt="star icon"/>
@@ -73,7 +74,7 @@ const Testimonials = () => {
               <section className="img-wrap">
                 <img class="profile-img" src={Image4} alt="Customer" width="300" height="200" />
               </section>
-              <p className="name">Westside Gunn</p>
+              <h4 className="name">Westside Gunn</h4>
               <section className="content">
                 <span className="stars">
                   <img src={starPng} alt="star icon"/>
@@ -88,9 +89,8 @@ const Testimonials = () => {
               </section>
             </section>
 
-          </div>
-        </section>
-    </section>
+          </section>
+      </section>
     );
 }
 
