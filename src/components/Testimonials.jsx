@@ -20,11 +20,11 @@ const Testimonials = () => {
               <section className="content">
                 <h4 className="name">Drake</h4>
                 <span className="stars">
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
                 </span>
                 <p className="text">
                   "You thought that little effort that you put in was enough girl how 'bout now?"
@@ -39,11 +39,11 @@ const Testimonials = () => {
               <section className="content">
                 <h4 className="name">Kendrick Lamar</h4>
                 <span className="stars">
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
                 </span>
                 <p className="text">
                   "I remember you was conflicted. Misusing your influence."
@@ -58,11 +58,11 @@ const Testimonials = () => {
               <section className="content">
                 <h4 className="name">J. Cole</h4>
                 <span className="stars">
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
                 </span>
                 <p className="text">
                   Appreciate the meal, G. My wife and I had great time!
@@ -77,11 +77,11 @@ const Testimonials = () => {
               <h4 className="name">Westside Gunn</h4>
               <section className="content">
                 <span className="stars">
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
-                  <img src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
+                  <img className="star" src={starPng} alt="star icon"/>
                 </span>
                 <p className="text">
                   Boom! Boom! Boom! Boom! Boom! Boom! Boom! Boom! Boom! Boom!
