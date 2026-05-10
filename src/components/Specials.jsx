@@ -1,5 +1,5 @@
 import salad from "../assets/dish1 - greek_salad.jpg"
-import bruschetta from "../assets/dish2.jpg"
+import bruschetta from "../assets/bruschetta2.jpg"
 import desert from "../assets/dish3 - lemon_dessert.jpg"
 import "./Specials.css"
 
@@ -9,7 +9,7 @@ const Specials = () => {
             <section className="specials-container">
                 <section className="specials-header">
                     <h2>Specials of Today</h2>
-                    <button className="yellow-button">Menu</button>
+                    <button className="menu-btn">Menu</button>
                 </section>
                 <section className="card-flex">
                     <article className="card-container">
@@ -18,7 +18,7 @@ const Specials = () => {
                         </section>
                         <h4>Greek Salad</h4>
                         <p>$12.00</p>
-                        <p>The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
+                        <p className="text-desc">The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
                     </article>
                     <article className="card-container">
                         <section className="image-card">
@@ -26,7 +26,7 @@ const Specials = () => {
                         </section>
                         <h4>Bruschetta</h4>
                         <p>$15.00</p>
-                        <p>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
+                        <p className="text-desc">Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
                     </article>
                     <article className="card-container">
                         <section className="image-card">
@@ -34,7 +34,7 @@ const Specials = () => {
                         </section>
                         <h4>Lemon Desert</h4>
                         <p>$25.00</p>
-                        <p>This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p>
+                        <p className="text-desc">This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p>
                     </article>
                 </section>
             </section>
