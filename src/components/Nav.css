@@ -17,7 +17,7 @@ h1, h2, h3 {
 .navbar-left {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
+  color: #ddd;
   text-decoration: none;
 }
 
@@ -57,7 +57,6 @@ h1, h2, h3 {
   color: #333;
 }
 
-/* CSS */
 .login-btn {
   appearance: none;
   background-color: #f4ce14;
@@ -83,7 +82,7 @@ h1, h2, h3 {
 }
 
 .login-btn:active {
-  background-color: #298e46;
+  background-color: #6d8674;
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 

@@ -3,24 +3,45 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #333;
-  color: #fff;
+  color: #eee;
   padding: 1rem;
 }
 
 .footer-links {
   list-style-type: none;
   display: flex;
+  flex-direction: column;
   margin: 0;
-  padding: 0;
+}
+
+.contact-links {
+  color: #eee;
+  text-decoration: none;
 }
 
 .footer-links a {
-  margin-right: 1rem;
-  color: #fff;
+  color: #eee;
   text-decoration: none;
+  padding: 0.75rem;
+}
+
+.footer-links a:hover, .contact-links:hover {
+  color: #f4ce14;
+  text-decoration: underline;
+}
+
+#copyright {
+  font-style: italic;
 }
 
 .footer-socials {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.footer-socials h4 {
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 0;
 }

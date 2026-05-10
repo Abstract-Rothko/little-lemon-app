@@ -6,7 +6,7 @@ function Footer() {
         <footer>
             <div className="footer-logo">
                 <img src={Logo} alt="Little Lemon Logo"/>
-                <p>&copy;2026 Little Lemon. All Rights Reserved.</p>
+                <p id="copyright">&copy;2026 Little Lemon. All Rights Reserved.</p>
             </div>
             <div className="footer-links">
                 <a href="/">Home</a>
@@ -17,9 +17,9 @@ function Footer() {
             </div>
             <div className="footer-socials">
                 <h4>Head Office</h4>
-                <p>Email: <a href="mailto: example@email.com">example@email.com</a></p>
-                <p>Phone: <a href="tel: +27123456789">+27 12-345-6789</a></p>
-                <p>Hours: 09:00 - 18:00 Monday - Saturday</p>
+                <p>Email: <a className="contact-links" href="mailto: example@email.com">example@email.com</a></p>
+                <p>Phone: <a className="contact-links" href="tel: +27123456789">+27 12-345-6789</a></p>
+                <p>Hours: 09:00-18:00(Monday - Saturday)</p>
             </div>
         </footer>
     );
