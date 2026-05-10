@@ -1,7 +1,7 @@
-import Image1 from "../assets/Person1.jpg"
-import Image2 from "../assets/Person2.jpg"
-import Image3 from "../assets/Person3.jpg"
-import Image4 from "../assets/Person4.jpg"
+import Image1 from "../assets/drake.avif"
+import Image2 from "../assets/k-dot.jpg"
+import Image3 from "../assets/cole.jpg"
+import Image4 from "../assets/westside-gunn.webp"
 import starPng from "../assets/black-star.png"
 import "./Testimonials.css"
 
