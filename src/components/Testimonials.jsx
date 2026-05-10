@@ -2,9 +2,9 @@ import Image1 from "../assets/Person1.jpg"
 import Image2 from "../assets/Person2.jpg"
 import Image3 from "../assets/Person3.jpg"
 import Image4 from "../assets/Person4.jpg"
+import starPng from "../assets/star.svg"
 import "./Testimonials.css"
 
-const starPng = "https://www.flaticon.com/free-icons/star";
 
 const Testimonials = () => {
     return (
@@ -12,81 +12,81 @@ const Testimonials = () => {
         <section className="testimonials-wrap">
           <p className="heading">What people say about us!</p>
           <div className="flex-items">
-            <div className="flex-item">
-              <div className="img-wrap">
+            <article className="flex-item">
+              <section className="img-wrap">
                 <img class="profile-img" src={Image1} alt="Customer" width="300" height="200"/>
-              </div>
-              <p className="name">Gabriella</p>
-              <span className="stars">
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-              </span>
-              <div className="text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Assumenda aliquid expedita non fugit qui laudantium facere iure
-                culpa alias esse.
-              </div>
-            </div>
+              </section>
+              <section className="content">
+                <p className="name">Drake</p>
+                <span className="stars">
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                </span>
+                <p className="text">
+                  "You thought that little effort that you put in was enough girl how 'bout now?"
+                </p>
+              </section>
+            </article>
 
-            <div className="flex-item">
-              <div className="img-wrap">
+            <article className="flex-item">
+              <section className="img-wrap">
                 <img class="profile-img" src={Image2} alt="Customer" width="300" height="200" />
-              </div>
-              <p className="name">Nicholas</p>
-              <span className="stars">
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-              </span>
-              <div className="text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Assumenda aliquid expedita non fugit qui laudantium facere iure
-                culpa alias esse.
-              </div>
-            </div>
+              </section>
+              <section className="content">
+                <p className="name">Kendrick Lamar</p>
+                <span className="stars">
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                </span>
+                <p className="text">
+                  "I remember you was conflicted. Misusing your influence."
+                </p>
+              </section>
+            </article>
 
-            <div className="flex-item">
-              <div className="img-wrap">
+            <article className="flex-item">
+              <section className="img-wrap">
                 <img class="profile-img" src={Image3} alt="Customer" width="300" height="200" />
-              </div>
-              <p className="name">Amelia</p>
-              <span className="stars">
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-              </span>
-              <div className="text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Assumenda aliquid expedita non fugit qui laudantium facere iure
-                culpa alias esse.
-              </div>
-            </div>
+              </section>
+              <section className="content">
+                <p className="name">J. Cole</p>
+                <span className="stars">
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                </span>
+                <p className="text">
+                  Appreciate the meal, G. My wife and I had great time!
+                </p>
+              </section>
+            </article>
 
-            <div className="flex-item">
-              <div className="img-wrap">
+            <section className="flex-item">
+              <section className="img-wrap">
                 <img class="profile-img" src={Image4} alt="Customer" width="300" height="200" />
-              </div>
-              <p className="name">Tommy</p>
-              <span className="stars">
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-                <img src={starPng} alt="star icon"/>
-              </span>
-              <div className="text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Assumenda aliquid expedita non fugit qui laudantium facere iure
-                culpa alias esse.
-              </div>
-            </div>
+              </section>
+              <p className="name">Westside Gunn</p>
+              <section className="content">
+                <span className="stars">
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                  <img src={starPng} alt="star icon"/>
+                </span>
+                <p className="text">
+                  Boom! Boom! Boom! Boom! Boom! Boom! Boom! Boom! Boom! Boom!
+                </p>
+              </section>
+            </section>
 
           </div>
         </section>
