@@ -20,7 +20,7 @@ function Nav() {
                         <Link className="nav-link" to="/">Menu</Link>
                     </li>
                     <li>
-                        <Link className="nav-link" to="/">Reservations</Link>
+                        <Link className="nav-link" to="/BookingPage">Reservations</Link>
                     </li>
                     <li>
                         <Link className="nav-link" to="/">Order Online</Link>

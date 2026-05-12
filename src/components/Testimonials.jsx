@@ -15,7 +15,7 @@ const Testimonials = () => {
           <section className="flex-items">
             <article className="flex-item">
               <section className="img-wrap">
-                <img class="profile-img" src={Image1} alt="Customer" width="300" height="200"/>
+                <img className="profile-img" src={Image1} alt="Customer" width="300" height="200"/>
               </section>
               <section className="content">
                 <h4 className="name">Drake</h4>
@@ -34,7 +34,7 @@ const Testimonials = () => {
 
             <article className="flex-item">
               <section className="img-wrap">
-                <img class="profile-img" src={Image2} alt="Customer" width="300" height="200" />
+                <img className="profile-img" src={Image2} alt="Customer" width="300" height="200" />
               </section>
               <section className="content">
                 <h4 className="name">Kendrick Lamar</h4>
@@ -53,7 +53,7 @@ const Testimonials = () => {
 
             <article className="flex-item">
               <section className="img-wrap">
-                <img class="profile-img" src={Image3} alt="Customer" width="300" height="200" />
+                <img className="profile-img" src={Image3} alt="Customer" width="300" height="200" />
               </section>
               <section className="content">
                 <h4 className="name">J. Cole</h4>
@@ -72,7 +72,7 @@ const Testimonials = () => {
 
             <section className="flex-item">
               <section className="img-wrap">
-                <img class="profile-img" src={Image4} alt="Customer" width="300" height="200" />
+                <img className="profile-img" src={Image4} alt="Customer" width="300" height="200" />
               </section>
               <section className="content">
                 <h4 className="name">Westside Gunn</h4>
