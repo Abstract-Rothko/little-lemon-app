@@ -1,22 +1,21 @@
 import React from "react";
 
-function BookingForm({formData, handleChange, handleSubmit}){
+function BookingForm({formData, handleChange, handleSubmit, availableTimes, dispatch}){
 
+   const handleDateChange = (event) => {
+      dispatch({ type: "UPDATE_DATE", payload: event.target.value });
+   };
 
    return (
       <form onSubmit={handleSubmit} style={{ display: 'grid', maxWidth:'200px', gap: "20px"}}>
          <label htmlFor="res-date">Choose date</label>
-         <input type="date" id="res-date" name="bookingDate" value={formData.bookingDate} onChange={handleChange}/>
+         <input type="date" id="res-date" name="bookingDate" value={formData.bookingDate} onChange={handleDateChange}/>
 
          <label htmlFor="res-time">Choose time</label>
          <select id="res-time" value={formData.time} name="time" onChange={handleChange}>
-            <option value="">Time</option>
-            <option value="17:00">17:00</option>
-            <option value="18:00">18:00</option>
-            <option value="19:00">19:00</option>
-            <option value="20:00">20:00</option>
-            <option value="21:00">21:00</option>
-            <option value="22:00">22:00</option>
+            {availableTimes.map((time) => (
+               <option key={time} value={time}>{time}</option>
+            ))}
          </select>
 
          <label htmlFor="guests">Number of guests</label>
