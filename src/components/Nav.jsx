@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import icon from "../assets/logo.svg"
 import "./Nav.css";
 
@@ -11,19 +11,19 @@ function Nav() {
             <section className="navbar-right">
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <Link className="nav-link" to="/">Home</Link>
                     </li>
                     <li>
-                        <a href="/">About</a>
+                        <Link className="nav-link" to="/">About</Link>
                     </li>
                     <li>
-                        <a href="/">Menu</a>
+                        <Link className="nav-link" to="/">Menu</Link>
                     </li>
                     <li>
-                        <a href="/">Reservations</a>
+                        <Link className="nav-link" to="/">Reservations</Link>
                     </li>
                     <li>
-                        <a href="/">Order Online</a>
+                        <Link className="nav-link" to="/">Order Online</Link>
                     </li>
                 <button className="login-btn">
                     <a href="/">Login</a>
