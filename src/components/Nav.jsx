@@ -1,13 +1,14 @@
+import { Link, NavLink } from "react-router-dom";
 import icon from "../assets/logo.svg"
 import "./Nav.css";
 
 function Nav() {
     return (
         <nav className="navbar">
-            <div className="navbar-left">
+            <section className="navbar-left">
                 <img src={icon} alt="Little Lemon Logo"></img>
-            </div>
-            <div className="navbar-right">
+            </section>
+            <section className="navbar-right">
                 <ul>
                     <li>
                         <a href="/">Home</a>
@@ -28,7 +29,7 @@ function Nav() {
                     <a href="/">Login</a>
                 </button>
                 </ul>
-            </div>
+            </section>
         </nav>
     );
 };
