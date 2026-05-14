@@ -16,7 +16,7 @@ function BookingForm({availableTimes, dispatch, formData, submitForm}) {
             name="date"
             value={formData.date}
             onChange={
-               (e) => dispatch({type: 'UPDATE_DATE', payload: e.target.value})
+               (e) => dispatch({type: 'UPDATE_DATE', payload: Number(e.target.value)})
             }
             required
          />
