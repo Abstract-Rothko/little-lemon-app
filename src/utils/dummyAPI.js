@@ -38,7 +38,7 @@ export function generateDateOptions(numberOfDays) {
 // Generate an array of available times for a select dropdown menu (e.g., for a specific date)
 export function generateTimeOptions(date) {
   const result = [];
-  const random = seededRandom(date.getDate());
+  const random = seededRandom({ seed: date.getDate() });
 
   for (let i = 17; i <= 23; i++) {
     if (random() < 0.5) result.push(i + ':00');
