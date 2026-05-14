@@ -29,7 +29,7 @@ function BookingForm({availableTimes, dispatch, formData, submitForm}) {
             onChange={(e) => dispatch({type: 'UPDATE_TIME', payload: e.target.value})}
          >
             {availableTimes.map((time) => (
-               <option key={time}>{time}</option>
+               <option key={time} value={time}>{time}</option>
             ))}
          </select>
 
