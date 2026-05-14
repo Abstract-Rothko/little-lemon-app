@@ -12,7 +12,8 @@ const getAvailableTimes = (date, bookedTimes = {}) => {
 export const bookingReducer = (state, action) => {
     switch (action.type) {
         case "UPDATE_DATE": {
-            const newTimes = generateTimeOptions(new Date(action.payload));
+            const newDate = new Date(action.payload);
+            const newTimes = getAvailableTimes(newDate, state.bookedTimes);
             return {
                 ...state,
                 date: action.payload,
