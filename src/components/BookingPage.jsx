@@ -13,6 +13,7 @@ export const bookingReducer = (state, action) => {
     switch (action.type) {
         case "UPDATE_DATE": {
             const newDate = new Date(action.payload);
+            if(isNaN(newDate.getTime())) return state;
             const newTimes = getAvailableTimes(newDate, state.bookedTimes);
             return {
                 ...state,

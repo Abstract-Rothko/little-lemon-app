@@ -1,11 +1,53 @@
-import React from "react";
+import React, {useState} from "react";
 import "./BookingForm.css"
+import { clear } from "@testing-library/user-event/dist/clear";
 
 function BookingForm({availableTimes, dispatch, formData, submitForm}) {
+   const [errors, setErrors] = useState({});
+
+   const validate = () => {
+      const newErrors = {};
+      const now = new Date();
+      const todayOnly = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+      const [year, month, day] = formData.date.split('-').map(Number);
+      const selectedDate = new Date(year, month - 1, day);
+
+      if (selectedDate < todayOnly) {
+         newErrors.date = "Date cannot be in the past.";
+      }
+
+      if (selectedDate.getTime() === todayOnly.getTime() && formData.time) {
+         const [hours, minutes] = formData.time.split(':').map(Number);
+         const selectedMinutes = hours * 60 + (minutes || 0);
+         const currentMinutes = now.getHours() * 60 + now.getMinutes();
+         if (selectedMinutes <= currentMinutes) {
+            newErrors.time = "Selected time had already passed today.";
+         }
+      }
+
+      const guests = Number(formData.guests);
+      if (guests < 1 || guests > 10) {
+         newErrors.guests = "Number of guests must be between 1 and 10.";
+      }
+
+      return newErrors;
+   }
+
    const handleSubmit = (e) => {
       e.preventDefault();
+      const newErrors = validate();
+      if (Object.keys(newErrors).length > 0) {
+         setErrors(newErrors);
+         return;
+      }
+      setErrors({});
       submitForm(formData);
    };
+
+   const clearError = (field) => {
+      setErrors(prev => ({...prev, [field]: undefined}));
+   }
 
    return (
       <form onSubmit={handleSubmit} style={{display: 'grid', maxWidth: '200px', gap: '20px'}}>
@@ -15,23 +57,30 @@ function BookingForm({availableTimes, dispatch, formData, submitForm}) {
             id="res-date"
             name="date"
             value={formData.date}
-            onChange={
-               (e) => dispatch({type: 'UPDATE_DATE', payload: Number(e.target.value)})
-            }
+            onChange={(e) => {
+               dispatch({type: 'UPDATE_DATE', payload: e.target.value});
+               clearError('date');
+            }}
             required
          />
+         {errors.date && <span className="error">{errors.date}</span>}
 
          <label htmlFor="res-time">Choose time</label>
          <select
             id="res-time"
             name="time"
             value={formData.time}
-            onChange={(e) => dispatch({type: 'UPDATE_TIME', payload: e.target.value})}
-         >
-            {availableTimes.map((time) => (
+            disable={availableTimes.length === 0}
+            onChange={(e) => {
+               dispatch({type: 'UPDATE_TIME', payload: e.target.value})
+               clearError('time');
+            }}>
+            {availableTimes.length === 0 ?
+               <option disabled value="">No times available</option> : availableTimes.map((time) => (
                <option key={time} value={time}>{time}</option>
             ))}
          </select>
+         {errors.time && <span className="error">{errors.time}</span>}
 
          <label htmlFor="guests">Number of guests</label>
          <input
@@ -41,11 +90,13 @@ function BookingForm({availableTimes, dispatch, formData, submitForm}) {
             max="10"
             name="guestsTotal"
             id="guests" value={formData.guests}
-            onChange={
-               (e) => dispatch({type: 'UPDATE_GUESTS', payload: e.target.value})
-            }
+            onChange={(e) => {
+               dispatch({type: 'UPDATE_GUESTS', payload: e.target.value})
+               clearError('guests');
+            }}
             required
          />
+         {errors.guests && <span className="error">{errors.guests}</span>}
 
          <label htmlFor="occasion">Occasion</label>
          <select
