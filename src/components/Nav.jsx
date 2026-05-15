@@ -25,9 +25,7 @@ function Nav() {
                     <li>
                         <Link className="nav-link" to="/">Order Online</Link>
                     </li>
-                <button className="login-btn">
-                    <a href="/">Login</a>
-                </button>
+                <button className="login-btn">Login</button>
                 </ul>
             </section>
         </nav>

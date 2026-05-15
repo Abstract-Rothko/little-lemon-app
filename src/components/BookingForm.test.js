@@ -18,11 +18,13 @@ const defaultProps = {
 
 beforeEach(() => jest.clearAllMocks());
 
+
+
 test('renders all form fields', () => {
     render(<BookingForm {...defaultProps} />);
-    expect(screen.getByLabelText(/choose date/i)).toBeInTheDocument();
-    expect(screen.getByLabelText(/choose time/i)).toBeInTheDocument();
-    expect(screen.getByLabelText(/number of guests/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/^date$/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/^time$/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/total guests/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/occasion/i)).toBeInTheDocument();
 });
 
@@ -34,7 +36,7 @@ test('renders available times as options', () => {
 
 test('changing date dispatches UPDATE_DATE', () => {
     render(<BookingForm {...defaultProps} />);
-    fireEvent.change(screen.getByLabelText(/choose date/i), {
+    fireEvent.change(screen.getByLabelText(/^date$/i), {
         target: { value: '2025-12-26' }
     });
     expect(mockDispatch).toHaveBeenCalledWith({
@@ -45,7 +47,7 @@ test('changing date dispatches UPDATE_DATE', () => {
 
 test('changing time dispatches UPDATE_TIME', () => {
     render(<BookingForm {...defaultProps} />);
-    fireEvent.change(screen.getByLabelText(/choose time/i), {
+    fireEvent.change(screen.getByLabelText(/^time$/i), {
         target: { value: '18:00' }
     });
     expect(mockDispatch).toHaveBeenCalledWith({
@@ -55,7 +57,39 @@ test('changing time dispatches UPDATE_TIME', () => {
 });
 
 test('submitting calls submitForm with formData', () => {
+    const futureProps = {
+        ...defaultProps,
+        formData: { ...defaultProps.formData, date: '2027-12-25' },
+    };
+    render(<BookingForm {...futureProps} />);
+    fireEvent.click(screen.getByRole('button', { name: /make your reservation/i }));
+    expect(mockSubmit).toHaveBeenCalledWith(futureProps.formData);
+});
+
+test('shows error when date is in the past', () => {
     render(<BookingForm {...defaultProps} />);
     fireEvent.click(screen.getByRole('button', { name: /make your reservation/i }));
-    expect(mockSubmit).toHaveBeenCalledWith(defaultProps.formData);
+    expect(screen.getByText(/date cannot be in the past/i)).toBeInTheDocument();
+    expect(mockSubmit).not.toHaveBeenCalled();
+});
+
+test('shows error when guests is out of range', () => {
+    const props = {
+        ...defaultProps,
+        formData: { ...defaultProps.formData, date: '2027-12-25', guests: 15 },
+    };
+    render(<BookingForm {...props} />);
+    fireEvent.click(screen.getByRole('button', { name: /make your reservation/i }));
+    expect(screen.getByText(/between 1 and 10/i)).toBeInTheDocument();
+    expect(mockSubmit).not.toHaveBeenCalled();
+});
+
+test('clears date error when date changes', () => {
+    render(<BookingForm {...defaultProps} />);
+    fireEvent.click(screen.getByRole('button', { name: /make your reservation/i }));
+    expect(screen.getByText(/date cannot be in the past/i)).toBeInTheDocument();
+    fireEvent.change(screen.getByLabelText(/^date$/i), {
+        target: { value: '2027-12-25' }
+    });
+    expect(screen.queryByText(/date cannot be in the past/i)).not.toBeInTheDocument();
 });

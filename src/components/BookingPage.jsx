@@ -72,18 +72,12 @@ function BookingPage() {
     };
 
     return (
-        <main>
-            <section className="booking-header">
-                <h1>Reserve a Table</h1>
-            </section>
-
-            <BookingForm
-                availableTimes={state.times}
-                dispatch={dispatch}
-                formData={state}
-                submitForm={submitForm}
-            />
-        </main>
+        <BookingForm
+            availableTimes={state.times}
+            dispatch={dispatch}
+            formData={state}
+            submitForm={submitForm}
+        />
     );
 }
 
